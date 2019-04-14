@@ -1,0 +1,291 @@
+body{
+	background:#f5f5f5;
+}
+.layout{
+	width: 100%;
+	min-width: 300px;
+	max-width: 640px;
+	margin: 0 auto;
+}
+/*头部开始*/
+.header{
+	width: 100%;
+	position:fixed;
+	top: 0;
+	left: 0;
+	z-index: 1;
+}
+.header_box{
+    width: 100%;
+    height: 45px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    text-align: center;
+    line-height: 45px;
+    font-size: 19px;
+    background-color: #fff;
+    z-index: 1002;
+    border: 0;
+    box-sizing: border-box;
+}
+.header_box_back{
+	width: 35px;
+	height: 45px;
+	position:absolute;
+	left: 0;
+	bottom: 0;
+	background:url(../img/1.png) no-repeat 50%;
+	background-size: 10px;
+}
+.header_box span{
+	font-size: 19px;
+	color: #000;
+}
+.header_box_logo .header_box_logo_left{
+	width: 35px;
+	height: 45px;
+	position:absolute;
+	right: 0;
+	bottom: -1px;
+	background:url(../img/3.png) no-repeat 50%;
+	background-size: 20px;
+}
+.header_box_logo .header_box_logo_right{
+	width: 35px;
+	height: 45px;
+	position:absolute;
+	right: 35px;
+	bottom: 0;
+	background:url(../img/2.png) no-repeat 50%;
+	background-size: 20px;
+}
+/*轮播图开始*/
+.banner{
+	width: 100%;
+	height: 150px;
+	overflow: hidden;
+	position: relative;
+	padding-top: 45px;
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+}
+.banner ul:first-child{
+	transform: translateX(-10%);
+	-webkit-transform: translateX(-10%);
+	width: 1000%;
+	height: 150px;
+}
+.banner ul:first-child li{
+	width: 10%;
+	float:left;
+}
+.banner ul:first-child li a{
+	display: block;
+	width: 100%;
+}
+.banner ul:first-child li a img{
+	width: 100%;
+}
+.banner ul:last-child{
+	height: 10px;
+	position:absolute;
+	bottom: 100px;
+	left: 50%;
+	transform: translateX(-50%);
+	-webkit-transform: translateX(-50%);
+}
+.banner ul:last-child li{
+	width: 6px;
+	height: 6px;
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+	float: left;
+	border:1px solid #ccc;
+	margin-right: 10px;
+}
+.banner ul:last-child li:last-child{
+	margin-right: 0;
+}
+.banner ul:last-child li.now{
+	background:#fff;
+}
+/*轮播图结束*/
+/*主体部分开始*/
+.hot{
+	width: 100%;
+}
+.hot_tit{
+	height: 30px;
+	line-height: 30px;
+	padding: 0 10px;
+	font-size: 12px;
+	position:relative;
+	background:#FFFFFF;
+}
+.hot .hot_con{
+	padding: 9px 0 5px 10px;
+}
+.hot_con .hot_con_D{
+	width: auto;
+	font-size: 0;
+	padding-bottom: 1px;
+	white-space: nowrap;
+	overflow-x: scroll;
+	overflow-y: hidden;
+}
+.hot_con .hot_con_D a{
+	margin-right: 2%;
+	width: 40%;
+	display: inline-block;
+}
+.hot_con .hot_con_D .img_warp{
+	width: auto;
+	height: auto;
+	position:relative;
+}
+.hot_con .hot_con_D .prd_info{
+	width: auto;
+	height: auto;
+	position:relative;
+}
+.hot_con .hot_con_D .img_warp_d{
+    padding-bottom: 67.63%;
+    height: 0;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.hot_con .hot_con_D .img_warp_d img{
+	width: 100%;
+}
+.hot_con_D .prd_info{
+	border-width: 0 1px 1px;
+	padding: 5px;
+}
+.hot_con_D .prd_info p{
+	height: 16px;
+	line-height: 16px;
+	font-size: 12px;
+	margin-bottom: 5px;
+	color: #666;
+}
+.hot_con_D .prd_info span{
+	height: 22px;
+	line-height: 22px;
+	font-size: 15px;
+	color: #d30775;
+}
+
+.icon_List_tit{
+	font-size: 12px;
+	background: #fff;
+	margin-top: 10px;
+	padding-left: 10px;
+	height: 30px;
+	line-height: 30px;
+}
+.icon_List_con{
+	width: auto;
+	font-size: 0;
+	padding: 5px 0 0 10px;
+}
+.icon_List_con a{
+	width: 25%;
+	display: inline-block;
+	overflow: hidden;
+}
+.icon_List_con a img{
+	width: 50%;
+	margin: 0 auto;
+}
+.icon_List_con a span{
+	overflow: hidden;
+	float: left;
+	width: 100%;
+	height: 1.5rem;
+	text-align: center;
+	font-size: .24rem;
+	color: #666;
+}
+
+.recommend{
+	margin-top: 10px;
+}
+.recommend_tit{
+	background:#FFFFFF;
+	height: 30px;
+	line-height: 30px;
+	padding: 0 10px;
+	font-size: 12px;
+}
+
+.recommend_con_anim_can{
+	padding: 5px 5px 5px 120px;
+	position:relative;
+	width: 375px;
+	height: 97px;
+}
+.recommend_pic{
+	width: 95px;
+	height: 77px;
+	position:absolute;
+	top: 5px;
+	left: 10px;
+}
+.recommend_pic img{
+	width: 100%;
+}
+.recommend_pic .sing{
+	background-image:url(../img/sign2.png);
+	background-size: 100% 100%;
+	width: 40px;
+	height: 15px;
+	position:absolute;
+	left: 0;
+	top: 0;
+}
+.msg p{
+	font-size: 12px;
+	color: #666;
+	line-height: 20px;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+.msg .mark{
+	padding-top: 5px;
+	overflow: hidden;
+	height: 22px;
+	max-width: 80%;
+}
+.msg .mark .hui{
+	color: #D30775;
+	border:1px solid #D30775;
+	border-radius: 1px;
+}
+.msg .notes{
+	position:absolute;
+	bottom: 35px;
+}
+.msg .tips{
+	width: 50%;
+	overflow: hidden;
+	bottom: 10px;
+	position:absolute;
+	line-height: 20px;
+	color: #aaa;
+	font-size: 12px;
+}
+.msg .price{
+	position: absolute;
+    right: 20px;
+    top: 30px;
+    text-align: right;
+    line-height: 20px;
+}
+.msg .price span{
+	color: #D30775;
+	font-size: 20px;
+}
+/*主体部分结束*/
